@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import momment from 'moment';
-import { getRecentPosts, getSimilarPosts } from '../services';
 import moment from 'moment';
+import { getRecentPosts, getSimilarPosts } from '../services';
 
 const PostWidget = ({ categories, slug }) => {
   const [relatedPosts, setRecentPosts] = useState([]);
@@ -40,7 +39,9 @@ const PostWidget = ({ categories, slug }) => {
               {moment(post.createdAt).format('MMM DD, YYYY')}
             </p>
             <Link href={`/post/${post.slug}`}>
-              <span className="text-md cursor-pointer">{post.title}</span>
+              <span className="block pb-3 mb-3 text-md cursor-pointer">
+                {post.title}
+              </span>
             </Link>
           </div>
         </div>
