@@ -11,7 +11,7 @@ const responsive = {
   },
   desktop: {
     breakpoint: { max: 1024, min: 768 },
-    items: 3,
+    items: 4,
   },
   tablet: {
     breakpoint: { max: 768, min: 640 },
@@ -38,7 +38,7 @@ const FeaturedPosts = () => {
     <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 text-white w-full"
+        className="h-6 text-white w-full"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -57,7 +57,7 @@ const FeaturedPosts = () => {
     <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 text-white w-full"
+        className="h-6 text-white w-full"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
