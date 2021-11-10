@@ -1,3 +1,4 @@
+export { default as AdjacentPostCard } from './AdjacentPostCard';
 export { default as Author } from './Author';
 export { default as Categories } from './Categories';
 export { default as Comments } from './Comments';
